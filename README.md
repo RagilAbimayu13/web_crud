@@ -1,25 +1,25 @@
-# 📦 Aplikasi CRUD Data Produk (Laravel)
+# 🎓 Aplikasi CRUD Data Mahasiswa (Laravel)
 
 ## 📌 Deskripsi
 
-Aplikasi ini merupakan sistem berbasis web yang dibuat menggunakan **Laravel** untuk mengelola data produk.
-Aplikasi ini menerapkan konsep **CRUD (Create, Read, Update, Delete)** sehingga pengguna dapat mengelola data produk dengan mudah.
+Aplikasi ini merupakan sistem berbasis web yang dibuat menggunakan **Laravel** untuk mengelola data mahasiswa.
+Aplikasi ini menerapkan konsep **CRUD (Create, Read, Update, Delete)** sehingga pengguna dapat menambah, melihat, mengubah, dan menghapus data mahasiswa.
 
 Data yang dikelola meliputi:
 
-* Nama produk
-* Harga
-* Stok
-* Deskripsi
+* NIM
+* Nama Mahasiswa
+* Tanggal Lahir
+* Alamat
 
 ---
 
 ## 🚀 Fitur Utama
 
-* ✅ Menampilkan daftar produk
-* ✅ Menambah data produk
-* ✅ Mengedit data produk
-* ✅ Menghapus data produk
+* ✅ Menampilkan data mahasiswa
+* ✅ Menambah data mahasiswa
+* ✅ Mengedit data mahasiswa
+* ✅ Menghapus data mahasiswa
 * ✅ Terintegrasi dengan database MySQL
 
 ---
@@ -62,12 +62,12 @@ Buka file `.env` lalu sesuaikan:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=data_produk
+DB_DATABASE=data_mahasiswa
 DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 5. Generate Application Key
+### 5. Generate Key
 
 ```bash
 php artisan key:generate
@@ -86,38 +86,34 @@ php artisan serve
 ```
 
 Akses di browser:
-
-```
 http://127.0.0.1:8000
-```
 
 ---
 
 ## 📁 Struktur Project
 
-* **Controller** : `ProdukController`
-* **Model** : `Produk`
-* **View** : `resources/views/produk`
-* **Route** : `routes/web.php`
+* Controller: `MahasiswaController`
+* Model: `Mahasiswa`
+* View: `resources/views/mahasiswa`
+* Route: `routes/web.php`
 
 ---
 
 ## 📝 Catatan
 
-* Pastikan **XAMPP (Apache & MySQL)** sudah aktif
-* Buat database terlebih dahulu di **phpMyAdmin**
-* Nama database harus sesuai dengan konfigurasi `.env`
+* Pastikan XAMPP (Apache & MySQL) sudah berjalan
+* Buat database terlebih dahulu di phpMyAdmin
+* Sesuaikan nama database dengan file `.env`
 
 ---
 
 ## 👨‍💻 Developer
 
-* Nama      : Ragil Rifky Abimayu
-* Jurusan   : Sistem Informasi
+* Nama: **Ragil Rifky Abimayu**
+* Jurusan: Sistem Informasi
 
 ---
 
 ## 📌 Penutup
 
-Aplikasi ini dibuat sebagai bagian dari pembelajaran Laravel untuk memahami konsep dasar CRUD dan integrasi database.
-Diharapkan aplikasi ini dapat menjadi dasar untuk pengembangan sistem yang lebih kompleks di masa depan 🚀
+Aplikasi ini dibuat untuk memahami konsep dasar CRUD menggunakan Laravel serta pengelolaan data mahasiswa berbasis web.
